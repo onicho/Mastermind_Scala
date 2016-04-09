@@ -11,7 +11,7 @@ class GameCode {
 
 
   def generateCode: ListBuffer[Colour] = {
-    //do we want it to return a string?
+
     for (i <- Range(0, 4)) {
 
       basecode = basecode :+ ourcolours(Random.nextInt(5))
@@ -23,17 +23,3 @@ class GameCode {
 
 }
 
-//}
-
-//  object GameCode {
-//
-//    def apply  = new GameCode
-//    apply.code
-//
-//
-////    val sc = new GameCode
-////    val sctest = sc.generateCode
-//
-//   // println(sctest)
-//
-//}

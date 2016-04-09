@@ -6,6 +6,8 @@ import scala.collection.mutable.ListBuffer
 
 object GameColours {
 
+
+
   var gcol = new ListBuffer[Colour]
 
 
@@ -17,18 +19,21 @@ object GameColours {
     gcol = gcol -= colour
   }
 
-  addColour(new Colour("blue"))
-  addColour(new Colour("green"))
-  addColour(new Colour("orange"))
-  addColour(new Colour("purple"))
-  addColour(new Colour("red"))
-  addColour(new Colour("yellow"))
+
+  addColour(Colour("blue"))
+  addColour(Colour("green"))
+  addColour(Colour("orange"))
+  addColour(Colour("purple"))
+  addColour(Colour("red"))
+  addColour(Colour("yellow"))
+
 
 }
 
-//object test extends App{
-//
-//  println(GameColours.gcol)
-//
-//}
-//
+object test extends App{
+
+  println(GameColours.gcol)
+  println(GameColours.gcol(1).getClass)
+
+}
+

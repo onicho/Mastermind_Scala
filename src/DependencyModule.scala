@@ -1,5 +1,6 @@
 import com.google.inject.AbstractModule
 import com.google.inject.name.Names
+import scaldi._
 
 /**
   * Created by ONicholls on 16/03/2016.
@@ -10,7 +11,10 @@ class DependencyModule extends AbstractModule{
 
     bind(classOf[TColourMaker]).to(classOf[ColourMaker])
     bind(classOf[Game]).to(classOf[TheGame])
-
     bind(classOf[Boolean]).annotatedWith(Names.named("ShowCode")).toInstance(true)
+
+
   }
+
+
 }
