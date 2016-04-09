@@ -9,7 +9,7 @@ class ColourMakerTest extends FlatSpec with MockFactory with Matchers{
 
 
   "ColourMaker" should
-    "return a new Colour object with the name that is passed to it" in{
+    "return a new Colour object with the name that is passed to it at construction" in{
 
     val colourmaker = new ColourMaker
 

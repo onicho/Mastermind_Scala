@@ -16,7 +16,7 @@ class GameCode {
 
       basecode = basecode :+ ourcolours(Random.nextInt(5))
     }
-    //println(finalcode) //need to remove afterwards
+
       basecode
 
   }
