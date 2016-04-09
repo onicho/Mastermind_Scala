@@ -9,7 +9,8 @@ import org.scalatest.{FlatSpec, Matchers}
 class GameCodeTest extends FlatSpec with MockFactory with Matchers {
 
   "GameCode" should
-    "return a new game code, which is a ListBuffer containing four random colour objects " in{
+    "return a new game code, which is a ListBuffer containing four random colour objects " +
+    "it will be the actuall game code that a player needs to crack" in{
 
     val gamecode = new GameCode
 
