@@ -30,7 +30,8 @@ class UserGuess (val colourMaker: TColourMaker) {
           input = takeinput
           input_correct = true
         } else {
-          println("Every single character of your code must be a bla. Try again")
+          println("Every single character of your guess code must be a valid colour.")
+          println("Valid characters/colours are R,B,Y,O,P or G. You can enter e.g rbgo . Try again")
           println()
         }
       }

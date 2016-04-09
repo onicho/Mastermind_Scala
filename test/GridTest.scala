@@ -30,6 +30,24 @@ test("guessCounter"){
   assert(grid.guessCounter ==  1)
 
 }
+//trait Pegs
+test("checkingCode") {
+
+  var code = new ListBuffer[Colour]
+  code = code += Colour("Y")
+  code = code += Colour("B")
+  code = code += Colour("P")
+  code = code += Colour("G")
+
+
+  //code  YBPG
+  //guess YRBO
+
+  grid.checkingCode(code = code, guess = x) == "Black, White"
+
+
+
+}
 
 
 }

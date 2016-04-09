@@ -11,7 +11,7 @@ trait Pegs {
 
   def checkingCode(code: ListBuffer[Colour], guess: ListBuffer[Colour]): String = {
 
-    var codeCopy = code
+    val codeCopy = code
     var pegInfo = new ListBuffer[String]
 
     for (i <- Range(0, 4)) {
