@@ -14,9 +14,8 @@ class GameCodeTest extends FlatSpec with MockFactory with Matchers {
 
     val gamecode = new GameCode
 
-    gamecode.code.length should be (4)
     gamecode.generateCode should be (gamecode.basecode)
-    gamecode.code should be (gamecode.code)
+    gamecode.code.length should be (4)
 
     for(i <- gamecode.code) {
 

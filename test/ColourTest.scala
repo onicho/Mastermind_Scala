@@ -12,7 +12,7 @@ class ColourTest extends FlatSpec with MockFactory with Matchers  {
 
   "Colour" should
     "return a string name of that particular Colour (when toString is called)" +
-    "rerutn the name of the colour obeject (when getName is called "  in{
+    "rerutn the name of the colour object (when getName is called "  in{
 
     Colour("Y").toString() should be ("Y")
     Colour("R").toString() should be ("R")

@@ -43,7 +43,7 @@ test("checkingCode") {
   //code  YBPG
   //guess YRBO
 
-  grid.checkingCode(code = code, guess = x) == "Black, White"
+  assert(grid.checkingCode(code = code, guess = x) == "Black White")
 
 
 

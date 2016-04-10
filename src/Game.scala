@@ -1,12 +1,12 @@
+import com.google.inject.ImplementedBy
 
 
 
+
+
+@ImplementedBy(classOf[TheGame])
 trait Game {
 
-  /**
-    * Run a one or more game sof mastermind, until the player
-    * quits.
-    */
 
   println()
   println("*"*20 + " Welcome to Mastermind ".toUpperCase() + "*"*20)
@@ -25,14 +25,19 @@ trait Game {
                         |A result consists of a black peg for each peg you have exactly correct (color and position) in your guess.
                         |For each peg in the guess that is the correct color, but is out of position, you get a white peg.
                         |When entering guesses you only need to enter the first character of the color as a capital letter.
-                        |You have 12 to guess the answer or you lose the game.""".stripMargin
+                        |You have 12 to guess the answer or you lose the game.
+                        |
+                        |Remember: R B O Y G P
+                        |
+                        |""".stripMargin
 
 
   println(rules)
   println(" " +"-"*100)
   println()
 
-  val gr  = new Grid
+
+  val gr: Grid = new Grid
   val gc = new GameCode
 
   def runGames() = {
