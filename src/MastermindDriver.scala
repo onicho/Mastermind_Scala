@@ -11,3 +11,5 @@ object MastermindDriver {
     g1.runGames
   }
 }
+
+//NB: if you want the Secret Code to be hidden during the game run, just CHANGE *true* to *false* in the DependencyModule

@@ -19,7 +19,7 @@ class DependencyModule extends AbstractModule{
     // false - secret code is hidden (game mode)
     bind(classOf[Boolean]).annotatedWith(Names.named("ShowCode")).toInstance(true)
 
-    bind(classOf[Grid]).annotatedWith(Names.named("gr")).toInstance(new Grid)
+
 
 
   }
